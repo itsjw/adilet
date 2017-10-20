@@ -7,3 +7,6 @@ db.sqlite3
 *.pyo
 *.db
 *.log
+
+/frontend/node_modules
+.vscode/
