@@ -5,9 +5,16 @@ import { Search } from 'components'
 
 const SearchContainer = props => <Search {...props} />
 
+// const mapStateToProps = store => {
+//     return {
+//         help: store.help
+//     }
+// }
+
 const mapStateToProps = state => ({
-  help: state,
+    help: state.help
 })
+
 
 const mapDispatchToProps = dispatch => ({
   getSearchResult: value => dispatch(fetchHelp(value)),

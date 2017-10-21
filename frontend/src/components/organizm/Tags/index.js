@@ -2,16 +2,7 @@ import React from 'react'
 import {injectGlobal} from 'styled-components'
 
 injectGlobal`
-.tags{
-  margin:0;
-  height: auto;
-}
-.tags-item{
-  margin-bottom: 30px;
-  max-width: 200px;
-  height: 40px;
-  border-radius: 30px;
-}
+
 `
 
 const Tags = () => {
@@ -24,10 +15,10 @@ const Tags = () => {
         <div className="tags-item col-lg-2">
           <p>keker</p>
         </div>
-        <div className="tags-item col-lg-2">
+        <div className="tags-item col-lg-1">
           <p>lolol</p>
         </div>
-        <div className="tags-item col-lg-3">
+        <div className="tags-item col-lg-4">
           <p>govno s percom</p>
         </div>
         <div className="tags-item col-lg-2">
@@ -36,6 +27,8 @@ const Tags = () => {
         <div className="tags-item col-lg-2">
           <p>piezdola</p>
         </div>
+        </div>
+        <div className="row">
         <div className="tags-item col-lg-2">
           <p>keker suka</p>
         </div>
@@ -52,7 +45,24 @@ const Tags = () => {
           <p>keker mmmm</p>
         </div>
         </div>
-        
+        <div className="row">
+        <div className="tags-item col-lg-2">
+          <p>keker</p>
+        </div>
+        <div className="tags-item col-lg-1">
+          <p>lolol</p>
+        </div>
+        <div className="tags-item col-lg-4">
+          <p>govno s percom</p>
+        </div>
+        <div className="tags-item col-lg-2">
+          <p>furrrva</p>
+        </div>
+        <div className="tags-item col-lg-2">
+          <p>piezdola</p>
+        </div>
+        </div>
+
       </div>
       </div>
     </div>
