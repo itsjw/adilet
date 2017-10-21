@@ -11,7 +11,7 @@ class HelpCategory(models.Model):
 
 class Article(models.Model):
     title = models.CharField(max_length=255, verbose_name='Название')
-    description = models.CharField(max_length=255, verbose_name='Описание')
+    description = models.CharField(max_length=2000, verbose_name='Описание')
     tag = models.CharField(max_length=255, verbose_name='Тэг')
 
     def __str__(self):
