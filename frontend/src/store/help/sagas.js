@@ -2,22 +2,22 @@ import { take, put, call, fork } from 'redux-saga/effects'
 import axios from 'axios'
 import { receiveHelp, receiveHelpArticle } from './actions'
 
-export function* fetchHelpSaga() {
-  const apiResponse = yield call(axios.get, 'http')
+export function* fetchHelpSaga(value) {
+  const apiResponse = yield call(axios.get, 'http://localhost:3001/help?q='+value)
 
   yield put(receiveHelp(apiResponse.data))
 }
 
 export function* fetchHelpArticleSaga(articleId) {
-  const apiResponse = yield call(axios.get, 'http')
+  const apiResponse = yield call(axios.get, 'http://localhost:3001/help')
 
   yield put(receiveHelpArticle(apiResponse.data))
 }
 
 export function* fetchHelp() {
   while (true) {
-    const {} = yield take('SEARCH_HELP')
-    yield call(fetchHelpSaga)
+    const { value } = yield take('SEARCH_HELP')
+    yield call(fetchHelpSaga, value)
   }
 }
 
