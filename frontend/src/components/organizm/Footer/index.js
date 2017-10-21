@@ -1,14 +1,8 @@
 import React from 'react'
-import {injectGlobal} from 'styled-components'
-
-injectGlobal`
-
-`
 
 const Footer = () => {
   return (
     <div className="footer">
-      <hr></hr>
       <div className="footer-links col-lg-4 col-sm-12">
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>
