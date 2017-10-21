@@ -9,4 +9,5 @@ db.sqlite3
 *.log
 
 frontend/node_modules/
+frontend/.happypack/
 .vscode/
