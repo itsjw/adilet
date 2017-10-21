@@ -2,36 +2,7 @@ import React from 'react'
 import { injectGlobal } from 'styled-components'
 
 injectGlobal`
-.information{
-}
-padding-bottom: 50px;
-.information-item{
-  text-align: left;
-}
-.information-categories{
-  float:right;
-  text-align:right;
-}
-.information-header{
-  margin-bottom: 20px;
-  text-align: center;
-}
-.information-item-icon {
-  width: 100%;
-}
-.information-item-icon img {
-  width: 150px;
-  margin:0 40%;
-}
-.information-item{
-  width: 100%;
-}
-.information-categories{
-  width: 100%;
-}
-.information-small-items{
-  margin-bottom: 20px;
-}
+
 
 `
 

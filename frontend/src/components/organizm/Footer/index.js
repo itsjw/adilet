@@ -2,21 +2,7 @@ import React from 'react'
 import {injectGlobal} from 'styled-components'
 
 injectGlobal`
-  .footer{
-    height: auto;
-    margin: 0;
-  }
-  .copyright{
-    background-color: grey;
-    width: 40px;
-    padding: 5px;
-  }
-  .footer-links, .footer-contacts, .footer-map{
-    display: table-row;
-    margin-bottom: 20px;
-    padding: 10px;
-    align-items: left;
-  }
+
 `
 
 const Footer = () => {

@@ -27,6 +27,7 @@ const App = () => {
        <meta property="og:image:height" content="630" />
        <link rel="icon" href="https://arc.js.org/icon.png" />
        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+       <link href="style.css" rel="stylesheet" />
      </Helmet>
     <ThemeProvider theme={theme}>
       <Switch>

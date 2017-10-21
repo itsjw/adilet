@@ -2,21 +2,7 @@ import React from 'react'
 import {injectGlobal} from 'styled-components'
 
 injectGlobal`
-.tags{
-  margin:0;
-  height: auto;
-  margin-bottom: 80px;
-}
-.tags-item{
-  font-family: 'Open Sans', sans-serif;
-  font-size:16px;
-  margin-bottom: 30px;
-  height: 50px;
-  background-color: lightgreen;
-  border-radius: 30px;
-  text-align:center;
-  margin-right: 20px;
-}
+
 `
 
 const Tags = () => {
