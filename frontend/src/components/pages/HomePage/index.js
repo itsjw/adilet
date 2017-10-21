@@ -1,13 +1,16 @@
 // https://github.com/diegohaz/arc/wiki/Atomic-Design
 import React from 'react'
 import { Header, Tags, Information, Footer } from 'components'
-import { Search } from 'containers'
+import { Link } from 'react-router-dom'
 
 const HomePage = () => {
   return (
     <div>
       <Header />
-      <Search />
+      <div>
+        <input placeholder="govno" />
+        <Link to="/search"><button>GO</button></Link>
+      </div>
       <Tags />
       <Information />
       <Footer />
