@@ -3,10 +3,11 @@ import {injectGlobal} from 'styled-components'
 
 injectGlobal`
   .header{
+    padding:0 40px;
     margin: 0;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: rgb(181,189,200);
     background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%);
     background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
