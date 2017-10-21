@@ -2,13 +2,16 @@
 import React from 'react'
 import { Header, Tags, Information, Footer } from 'components'
 import { Link } from 'react-router-dom'
-import { injectGlobal } from 'styled-components'
+import { Switch, Route } from 'react-router-dom'
+import { injectGlobal, ThemeProvider } from 'styled-components'
 
 injectGlobal`
   .home-search{
+    font-family: 'Open Sans', sans-serif;
     display: table;
     margin: 0 auto;
     margin: 100px auto;
+    margin-bottom: 150px;
   }
   .home-search input{
     width:550px;

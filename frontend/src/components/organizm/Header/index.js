@@ -3,24 +3,29 @@ import {injectGlobal} from 'styled-components'
 
 injectGlobal`
   .header{
-    padding:0 40px;
-    margin: 0;
-    height: auto;
+    height:400px;
+    max-height:400px;
+    padding:0 140px;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
+    text-transform:uppercase;
     justify-content: space-between;
-    background: rgb(181,189,200);
-    background: -moz-linear-gradient(top, rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%);
-    background: -webkit-linear-gradient(top, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
-    background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
+    background-image: url(banner.png);
+    background-position: center center;
+    background-size: cover;
+    color:#fff;
   }
   .header-text{
+    margin:auto 0;
     width: 400px;
     text-align: right;
-    height: 300px
   }
   .header-logo{
-
+      margin:auto 0;
+  }
+  .header-logo img {
+    width:150px;
+    margin-bottom:50px;
   }
 `
 
@@ -28,15 +33,14 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-logo">
-        <h1>Header-block</h1>
+        <img src="logo.svg" alt="" />
       </div>
       <div className="header-text">
         <h1>Header-block</h1>
-        <p>Don't get me wrong. I'll speak more deeply about it in the near future,
-         in a blog post. In short, ARc exists because I failed on another project: I had a 3 months deadline,
-         but I spent so much time dedicating myself to the code, refactoring it and researching approaches in
-         pursuit of the best possible structure that I ended up with no project at all, that was just an ugly
-         page with a list of images.</p>
+        <p>Don't get me wrong. I'll speak more deeply,<br/>
+         in a blog post. In short, ARc exists because <br/>
+         another project: I had a 3 months,<br/>
+         but I spent so much time </p>
       </div>
     </div>
   )
