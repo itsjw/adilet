@@ -1,5 +1,5 @@
 import React from 'react'
-import {injectGlobal} from 'styled-components'
+import { injectGlobal } from 'styled-components'
 
 injectGlobal`
 .information{
@@ -22,7 +22,7 @@ padding-bottom: 50px;
 
 const Information = () => {
   return (
-    <div classNameName="information">
+    <div className="information">
       <div className="container">
 
         <div className="information-item col-ls-6 col-sm-12">
@@ -34,7 +34,7 @@ const Information = () => {
           </div>
         </div>
 
-        <div classNameName="information-item col-ls-6 col-sm-12">
+        <div className="information-item col-ls-6 col-sm-12">
           <div className="information-headr">
             <h1>Header - information</h1>
           </div>

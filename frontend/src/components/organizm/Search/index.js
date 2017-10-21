@@ -1,5 +1,6 @@
 import React from 'react'
-import {injectGlobal} from 'styled-components'
+import { injectGlobal } from 'styled-components'
+import PropTypes from 'prop-types'
 
 injectGlobal`
 .search{
@@ -22,45 +23,45 @@ injectGlobal`
 }
 `
 
-// const Search = () => {
-//   return (
-//     <div className="search">
-//       <div className="search-header">
-//         <h1>search-header search-header search-header</h1>
-//       </div>
-//       <div className="search-input">
-//         <input type="text" placeholder="searching area">
-//         <button className="btn">Search</button>
-//       </div>
-//     </div>
-//   )
-// }
-
 class Search extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      searchQuery: ""
+      searchValue: '',
     }
   }
 
-  componentDidMount() {
-    this.props.fetchHelp()
+  componentDidUpdate = () => {
+    this.props.getSearchResult(this.state.searchValue)
+  }
+
+  handleSearchChange = (e) => {
+    this.setState({ searchValue: e.target.value })
   }
 
   render() {
+    console.log(this.props)
     return (
-    <div className="search">
-      <div className="search-header">
-        <h1>search-header search-header search-header</h1>
+      <div className="search">
+        <div className="search-header">
+          <h2>Вам нужна помощь с...</h2>
+        </div>
+        <div className="search-input">
+          <input
+            type="text"
+            placeholder="searching area"
+            value={this.state.searchValue}
+            onChange={this.handleSearchChange}
+          />
+          <button className="btn">Search</button>
+        </div>
       </div>
-      <div className="search-input">
-        <input type="text" placeholder="searching area" />
-        <button className="btn">Search</button>
-      </div>
-    </div>
-  )
+    )
   }
+}
+
+Search.propTypes = {
+  getSearchResult: PropTypes.func,
 }
 
 export default Search
