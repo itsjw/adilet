@@ -1,16 +1,16 @@
 import React from 'react'
-import connect from 'react-redux'
-import fetchHelp from 'store/actions'
-import Search from 'components'
+import { connect } from 'react-redux'
+import { getSearchResult } from 'store/actions'
+import { Search } from 'components'
 
-const mapStateToProps = help => {
-    return {
-      help: store.help
-    }
-}
+const SearchContainer = props => <Search {...props} />
 
-const mapDispatchToProps = dispatch => ({
-    fetchHelp: () => dispatch(fetchHelp())
+const mapStateToProps = state => ({
+  help: state,
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Search)
+const mapDispatchToProps = dispatch => ({
+  getSearchResult: value => dispatch(getSearchResult(value)),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchContainer)
