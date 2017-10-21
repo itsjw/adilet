@@ -1,5 +1,5 @@
 import React from 'react'
-import injectGlobal from 'styled-components'
+import {injectGlobal} from 'styled-components'
 
 injectGlobal`
 .information{
@@ -30,7 +30,7 @@ const Information = () => {
             <h1>Header - information</h1>
           </div>
           <div className="information-item-icon">
-            <img src="images/information-icon.svg" alt="">
+            <img src="images/information-icon.svg" alt="" />
           </div>
         </div>
 

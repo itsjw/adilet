@@ -1,5 +1,5 @@
 import React from 'react'
-import injectGlobal from 'styled-components'
+import {injectGlobal} from 'styled-components'
 
 injectGlobal`
 .search{
@@ -55,7 +55,7 @@ class Search extends React.Component {
         <h1>search-header search-header search-header</h1>
       </div>
       <div className="search-input">
-        <input type="text" placeholder="searching area">
+        <input type="text" placeholder="searching area" />
         <button className="btn">Search</button>
       </div>
     </div>

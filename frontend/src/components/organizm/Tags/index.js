@@ -1,5 +1,5 @@
 import React from 'react'
-import injectGlobal from 'styled-components'
+import {injectGlobal} from 'styled-components'
 
 injectGlobal`
 .tags{
@@ -22,41 +22,39 @@ const Tags = () => {
 
         <div className="tags-item col-lg-2">
           <p>keker</p>
-        <div>
+        </div>
         <div className="tags-item col-lg-2">
           <p>lolol</p>
-        <div>
+        </div>
         <div className="tags-item col-lg-3">
           <p>govno s percom</p>
-        <div>
+        </div>
         <div className="tags-item col-lg-2">
           <p>furrrva</p>
-        <div>
+        </div>
         <div className="tags-item col-lg-2">
           <p>piezdola</p>
-        <div>
+        </div>
         <div className="tags-item col-lg-2">
           <p>keker suka</p>
-        <div>
+        </div>
         <div className="tags-item col-lg-3">
           <p>keker bliat</p>
-        <div>
+        </div>
         <div className="tags-item col-lg-2">
           <p>superman</p>
-        <div>
+        </div>
         <div className="tags-item col-lg-2">
           <p>kal el</p>
-        <div>
+        </div>
         <div className="tags-item col-lg-2">
           <p>keker mmmm</p>
-        <div>
+        </div>
 
       </div>
       </div>
     </div>
   )
 }
-
-Footer.propTypes = {}
 
 export default Tags
