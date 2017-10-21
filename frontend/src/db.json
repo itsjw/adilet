@@ -1,0 +1,30 @@
+{
+    "help": [
+        {
+            "articleId": 1,
+            "name": "kek",
+            "category": "harassment",
+            "content": "lorim ipsum lel kek"
+        },
+        {
+            "articleId": 2,
+            "name": "lel",
+            "category": "familylaw",
+            "content": "lorem ipsum lel kek"
+        }
+    ],
+    "edu": [
+        {
+            "articleId": 1,
+            "name": "lel",
+            "category": "harassment",
+            "content": "lorim ipsum lel kek"
+        },
+        {
+            "articleId": 2,
+            "name": "kek",
+            "category": "harassment",
+            "content": "lorem ipsum lel kek"
+        }
+    ]
+}

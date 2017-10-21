@@ -1,6 +1,7 @@
-export function fetchHelp() {
+export function fetchHelp(value) {
   return {
     type: 'SEARCH_HELP',
+    payload: value
   }
 }
 
