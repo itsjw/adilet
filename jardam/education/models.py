@@ -11,7 +11,7 @@ class EducationCategory(models.Model):
 
 class Education(models.Model):
     title = models.CharField(max_length=255, verbose_name='Название')
-    content = models.CharField(max_length=255, verbose_name='Контент')
+    content = models.CharField(max_length=2000, verbose_name='Контент')
     tag = models.CharField(max_length=255, verbose_name='Тэг')
 
     def __str__(self):
