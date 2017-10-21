@@ -1,7 +1,6 @@
 from rest_framework import viewsets
 from clinic.models import Clinic
-from .serializers import ClinicSerializer, EducationSerializer, HelpSerializer, EducationCategorySerializer, \
-    HelpCategorySerializer
+from .serializers import ClinicSerializer, EducationSerializer, HelpSerializer, EducationCategorySerializer, HelpCategorySerializer
 from education.models import Education, EducationCategory
 from help.models import HelpCategory, Article
 

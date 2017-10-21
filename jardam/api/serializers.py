@@ -15,11 +15,10 @@ class EducationCategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = EducationCategory
-        fields = ('id', 'category_name', 'description', 'tag')
+        fields = ('id', 'category_name', 'article')
 
 
 class EducationSerializer(serializers.ModelSerializer):
-
     ecategory_info = EducationCategorySerializer(read_only=True, source='ecategory')
     ecategory = serializers.IntegerField(allow_null=True, source='ecategory_id')
 
@@ -36,7 +35,6 @@ class HelpCategorySerializer(serializers.ModelSerializer):
 
 
 class HelpSerializer(serializers.ModelSerializer):
-
     hcategory_info = HelpCategorySerializer(read_only=True, source='hcategory')
     hcategory = serializers.IntegerField(allow_null=True, source='hcategory_id')
 

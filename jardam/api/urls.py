@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from rest_framework import routers
 from api.views import ClinicViewSet, HelpCategoryViewSet, EducationCategoryViewSet
 
