@@ -11,4 +11,4 @@ db.sqlite3
 frontend/node_modules/
 frontend/.happypack/
 .vscode/
-frontend/.happypack
+frontend/.happypack/*

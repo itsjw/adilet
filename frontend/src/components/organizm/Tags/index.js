@@ -20,6 +20,7 @@ const Tags = () => {
       <div className="tags-items">
       <div className="container">
 
+      <div className="row">
         <div className="tags-item col-lg-2">
           <p>keker</p>
         </div>
@@ -50,7 +51,8 @@ const Tags = () => {
         <div className="tags-item col-lg-2">
           <p>keker mmmm</p>
         </div>
-
+        </div>
+        
       </div>
       </div>
     </div>

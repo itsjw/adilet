@@ -3,13 +3,12 @@ import React from 'react'
 // import { Header, Tags, Information, Footer } from 'components'
 import { Search } from 'containers'
 
-const HomePage = () => {
+const SearchPage = () => {
   return (
     <div>
-      Yo! THis is POISK!!!
       <Search />
     </div>
   )
 }
 
-export default HomePage
+export default SearchPage
