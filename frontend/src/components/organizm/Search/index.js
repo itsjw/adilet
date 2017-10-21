@@ -22,8 +22,34 @@ injectGlobal`
 }
 `
 
-const Search = () => {
-  return (
+// const Search = () => {
+//   return (
+//     <div className="search">
+//       <div className="search-header">
+//         <h1>search-header search-header search-header</h1>
+//       </div>
+//       <div className="search-input">
+//         <input type="text" placeholder="searching area">
+//         <button className="btn">Search</button>
+//       </div>
+//     </div>
+//   )
+// }
+
+class Search extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      searchQuery: ""
+    }
+  }
+
+  componentDidMount() {
+    this.props.fetchHelp()
+  }
+
+  render() {
+    return (
     <div className="search">
       <div className="search-header">
         <h1>search-header search-header search-header</h1>
@@ -34,6 +60,7 @@ const Search = () => {
       </div>
     </div>
   )
+  }
 }
 
 Footer.propTypes = {}
