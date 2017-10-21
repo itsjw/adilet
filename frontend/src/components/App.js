@@ -1,11 +1,10 @@
 import React from 'react'
+import 'flexboxgrid/dist/flexboxgrid.min.css'
 import { Switch, Route } from 'react-router-dom'
 import { injectGlobal, ThemeProvider } from 'styled-components'
-
-import { HomePage } from 'components'
-
-// https://github.com/diegohaz/arc/wiki/Styling
+import { HomePage, SearchPage } from 'components'
 import theme from './themes/default'
+
 
 injectGlobal`
   body {
@@ -18,6 +17,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Switch>
         <Route path="/" component={HomePage} exact />
+        <Route path="/search" component={SearchPage} exact />
       </Switch>
     </ThemeProvider>
   )
