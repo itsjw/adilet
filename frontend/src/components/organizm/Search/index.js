@@ -1,10 +1,6 @@
 import React from 'react'
-import { injectGlobal } from 'styled-components'
 import PropTypes from 'prop-types'
 
-injectGlobal`
-
-`
 
 class Search extends React.Component {
   constructor(props) {
