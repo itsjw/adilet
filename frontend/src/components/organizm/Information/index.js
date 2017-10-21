@@ -71,6 +71,4 @@ const Information = () => {
   )
 }
 
-Footer.propTypes = {}
-
 export default Information

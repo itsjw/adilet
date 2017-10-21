@@ -63,6 +63,4 @@ class Search extends React.Component {
   }
 }
 
-Footer.propTypes = {}
-
 export default Search
