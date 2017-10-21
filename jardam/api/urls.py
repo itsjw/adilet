@@ -1,9 +1,9 @@
+# -*- coding: utf-8 -*-
 from rest_framework import routers
-from api.views import ClinicViewSet, EducationViewSet, HelpViewSet
+from api.views import ClinicViewSet, HelpCategoryViewSet, EducationCategoryViewSet
 
 router = routers.DefaultRouter()
 router.register(r'clinic', ClinicViewSet, base_name='clinic')
-router.register(r'education', EducationViewSet, base_name='education')
-router.register(r'help', HelpViewSet, base_name='help')
-
+router.register(r'hcategory', HelpCategoryViewSet, base_name='help_category')
+router.register(r'ecategory', EducationCategoryViewSet, base_name='education_category')
 urlpatterns = router.urls
