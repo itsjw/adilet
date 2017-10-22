@@ -115,13 +115,14 @@ body, html {
   font-size: 25px;
   text-align: center;
   padding-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .tags-header p {
   font-size: 25px;
   text-align: center;
   padding-bottom: 30px;
-  color: #000;
+  color: #207476;
 }
 
 li {
@@ -212,6 +213,45 @@ a {
   margin: 0 auto;
   text-align: center;
   display: flex;
+}
+
+.home-form input {
+  padding: 6px;
+  width: 550px;
+  height: 51px;
+  font-size: 16px;
+  border-radius: 30px;
+  padding-left: 50px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  background-color: #e8e8e8;
+  color: #000;
+}
+
+.home-form {
+  display: table;
+}
+
+.search-wrap {
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.home-form button {
+  color: transparent;
+  width: 70px;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  height: 64px;
+  border: 0;
+  background-color: #207476;
+  background-image: url(search.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40%;
 }
 
 .information-header {
@@ -305,9 +345,9 @@ a {
 
 .tags-item {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 1.9vh;
   margin-bottom: 30px;
-  height: 50px;
+  height: 40px;
   background-color: #86b7b8;
   border-radius: 30px;
   text-align: center;

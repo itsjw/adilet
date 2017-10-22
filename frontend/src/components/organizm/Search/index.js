@@ -43,9 +43,34 @@ class Search extends React.Component {
 
         </div>
           </Link>
-
+            <div className="search-wrap">
+          <div className="home-form">
+            <input
+              type="text"
+              placeholder="Введите вашу проблему"
+              value={this.state.searchValue}
+              onChange={this.handleSearchChange}
+            />
+            <button className="submit">Search</button>
+          </div>
+          </div>
+          <div className="search-content" style={{ color: '#000' }}>
+            {
+              this.props.help.map((item) => {
+                return (
+                  <div className="search-content-item" key={item.articleId}>
+                    <div className="search-item-header">
+                      <Link to="/article"> {item.name}</Link>
+                    </div>
+                    <div className="search-item-text">
+                      <p>{item.content}</p>
+                    </div>
+                  </div>)
+              })
+            }
+          </div>
         <div className="search-header">
-          <h1>Результаты поиска по запросу "Насилие"</h1>
+          <h1>Результаты поиска по запросу  "{this.state.searchValue}"</h1>
         </div>
         <div className="search-content-item">
           <div className="search-item-header">
@@ -70,27 +95,6 @@ class Search extends React.Component {
           <div className="search-item-text">
             <p>Согласно статье 25 Семейного кодекса КР, вопросы, разрешаемые судом при вынесении решения о расторжении брака...</p>
           </div>
-        </div>
-        <div className="search-input">
-          <input
-            type="text"
-            placeholder="searching area"
-            value={this.state.searchValue}
-            onChange={this.handleSearchChange}
-          />
-          <button className="btn">Search</button>
-        </div>
-        <div className="search-content" style={{ color: '#000' }}>
-          {
-            this.props.help.map((item) => {
-              return (
-                <div className="search-content-item" key={item.articleId}>
-                  <h3>{item.name}</h3>
-                  <p>{item.category}</p>
-                  <p>{item.content}</p>
-                </div>)
-            })
-          }
         </div>
         <div className="footer">
         <div className="container">
