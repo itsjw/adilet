@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const Article = () => {
   return (
     <div>
-    <div className="container">
     <div className="header">
+    <div className="container">
       <div className="header-logo">
         <img src="adilet.svg" alt="" />
       </div>

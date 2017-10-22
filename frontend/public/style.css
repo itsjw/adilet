@@ -68,7 +68,7 @@ body, html {
 }
 
 .header-links .header-langs a {
-  color: #959595;
+  color: #fff;
   margin: 0 10px;
 }
 
@@ -82,9 +82,15 @@ body, html {
 }
 
 .header-links li a {
-  color: #207476;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
+}
+
+.center {
+  display: table;
+  margin: 50px;
+  margin-left: 0px;
 }
 
 .about {
@@ -98,6 +104,7 @@ body, html {
   text-transform: uppercase;
   text-align: center;
   font-size: 50px;
+  color: #207476;
 }
 
 .about-deckription {
@@ -131,7 +138,15 @@ a {
   display: flex;
   text-transform: uppercase;
   justify-content: space-between;
-  background-image: #fff;
+  background-color: #207476;
+}
+
+.header .container {
+  height: 80px;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  background-color: #207476;
 }
 
 .header-text {
@@ -153,7 +168,9 @@ a {
 }
 
 .information-small-items p {
-  color: #ffc125;
+  color: #207476;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .information-small-items {
@@ -163,7 +180,7 @@ a {
   margin: 10px;
   margin-bottom: 40px;
   border-radius: 15px;
-  border: 1px solid #ffc125;
+  border: 1px solid #207476;
   height: 200px;
   width: 165px;
   text-transform: uppercase;
@@ -210,6 +227,7 @@ a {
 .information-header h1 {
   font-size: 50px;
   margin: 0;
+  color: #207476;
   font-weight: light;
   font-family: 'Roboto Slab', serif;
 }
@@ -335,7 +353,6 @@ a {
   background-image: url(banner.jpg);
   background-position: center center;
   width: 100%;
-  height: calc(100vh-80px);
   background-size: cover;
   color: #fff;
   height: calc(100vh - 80px);
@@ -456,6 +473,16 @@ hr {
     color: black;
     padding: 20px 100px;
   }
+  .home-search-wrapp {
+    background-image: url(banner.jpg);
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    height: calc(50vh);
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width:480px) {
@@ -504,6 +531,16 @@ hr {
   }
   .header button {
     display: unset;
+  }
+  .home-search-wrapp {
+    background-image: url(banner.jpg);
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    height: calc(50vh);
+    display: flex;
+    align-items: center;
   }
 }
 

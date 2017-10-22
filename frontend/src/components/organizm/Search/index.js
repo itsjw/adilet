@@ -22,9 +22,9 @@ class Search extends React.Component {
   render() {
     return (
       <div>
-        <div className="container">
-          <Link to="/">
-            <div className="header">
+        <Link to="/">
+        <div className="header">
+            <div className="container">
               <div className="header-logo">
                 <img src="adilet.svg" alt="" />
               </div>
@@ -40,8 +40,9 @@ class Search extends React.Component {
             +
               </button>
             </div>
-          </Link>
+
         </div>
+          </Link>
 
         <div className="search-header">
           <h1>Результаты поиска по запросу "Насилие"</h1>

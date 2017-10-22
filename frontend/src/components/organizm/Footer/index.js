@@ -31,3 +31,7 @@ const Footer = () => {
 Footer.propTypes = {}
 
 export default Footer
+
+// <div className="center">
+//   C sudo rm -rf * 2017
+// </div>
