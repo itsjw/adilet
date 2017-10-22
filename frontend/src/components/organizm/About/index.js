@@ -8,7 +8,7 @@ const About = () => {
         <p>О нас</p>
       </div>
       <div className="about-deckription">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam distinctio voluptatum voluptates? Ratione culpa, praesentium incidunt maxime. Ipsum ipsam accusamus, facere minus sapiente fugit, eligendi neque itaque officia pariatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi voluptates aliquam delectus aperiam reprehenderit accusantium voluptate, saepe dignissimos. Unde labore a quod, alias tenetur necessitatibus vitae fugit nam, quos.</p>
+        <p>На данный момент население Кыргызстана недостаточно осведомлено о своих правах и юридически необразованно. Поэтому при столкновении с правонарушениями или какими-либо социальными проблемами люди не знают куда, а главное как обратиться за помощью и от кого требовать вмешательства. Наш портал будет предоставлять исчерповающую информацию для решения юридических проблем.</p>
       </div>
       </div>
     </div>

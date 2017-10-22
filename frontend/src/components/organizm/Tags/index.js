@@ -11,50 +11,50 @@ const Tags = () => {
       </div>
         <div className="row">
         <div className="tags-item col-lg-2 col-sm-3 col-xs-5">
-          <p>keker</p>
+          <p>семья</p>
         </div>
         <div className="tags-item col-lg-1 col-sm-2 col-xs-5">
-          <p>lolol</p>
+          <p>суд</p>
         </div>
         <div className="tags-item col-lg-4 col-sm-5 col-xs-10">
-          <p>govno s percom</p>
+          <p>судопроизводство</p>
         </div>
         <div className="tags-item col-lg-3 col-sm-4 col-xs-5">
-          <p>furrrva</p>
+          <p>насилие</p>
         </div>
         <div className="tags-item col-lg-1 col-sm-2 col-xs-5">
-          <p>piezdola</p>
+          <p>дом</p>
         </div>
 
         <div className="tags-item col-lg-2 col-sm-3 col-xs-5">
-          <p>keker suka</p>
+          <p>семья</p>
         </div>
         <div className="tags-item col-lg-3 col-sm-4 col-xs-5">
-          <p>keker bliat</p>
+          <p>наследство</p>
         </div>
         <div className="tags-item col-lg-2 col-sm-3 col-xs-5">
-          <p>superman</p>
+          <p>имущество</p>
         </div>
         <div className="tags-item col-lg-2 col-sm-3 col-xs-5">
-          <p>kal el</p>
+          <p>заявление</p>
         </div>
         <div className="tags-item col-lg-2 col-sm-3 col-xs-5">
-          <p>keker mmmm</p>
+          <p>алименты</p>
         </div>
         <div className="tags-item col-lg-1 col-sm-2 col-xs-5">
-          <p>keker</p>
+          <p>квартира</p>
         </div>
         <div className="tags-item col-lg-2 col-sm-3 col-xs-5">
-          <p>lolol</p>
+          <p>адвокат</p>
         </div>
         <div className="tags-item col-lg-2 col-sm-3 col-xs-10">
-          <p>govno s percom</p>
+          <p>доказательства</p>
         </div>
         <div className="tags-item col-lg-2 col-sm-3 col-xs-5">
-          <p>furrrva</p>
+          <p>собственность</p>
         </div>
         <div className="tags-item col-lg-4 col-sm-5 col-xs-5">
-          <p>piezdola</p>
+          <p>брак</p>
         </div>
         </div>
 
