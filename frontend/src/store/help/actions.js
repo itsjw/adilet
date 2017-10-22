@@ -1,7 +1,7 @@
 export function fetchHelp(value) {
   return {
     type: 'SEARCH_HELP',
-    value
+    value,
   }
 }
 
