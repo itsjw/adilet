@@ -9,11 +9,8 @@ const Information = () => {
 
         <div className="information-item col-lg-12 col-sm-12">
           <div className="information-header">
-            <h1>EDUCATION</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Asperiores optio a laborum, aliquam quaerat ut impedit quae
-            doloremque veniam officia porro eligendi quisquam iure quo hic laboriosam sed
-            consectetur. Vero.</p>
+            <h1>ОБУЧЕНИЕ</h1>
+            <p>Наш проект нацелен вдохновить граждан Кыргызской Республики на изучения своих юридических прав. Ниже представлены категории, где вы сможете найти статьи о сложном на просто языке.</p>
           </div>
         </div>
 
@@ -21,23 +18,23 @@ const Information = () => {
           <div className="information-categories">
             <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="violence.svg" alt="" />
-              <p>lorem kek lol</p>
+              <p>насилие</p>
             </div>
             <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="criminal.svg" alt="" />
-              <p>lorem kek lol</p>
+              <p>уголовное право</p>
             </div>
             <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="rights.svg" alt="" />
-              <p>lorem kek lol</p>
+              <p>права человека</p>
             </div>
             <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="family.svg" alt="" />
-              <p>lorem kek lol</p>
+              <p>семейное право</p>
             </div>
             <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="court.svg" alt="" />
-              <p>lorem kek lol</p>
+              <p>судопроизводство</p>
             </div>
           </div>
         </div>
