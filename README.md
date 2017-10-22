@@ -4,7 +4,7 @@
 You can take a look on site here http://adilet.ml  
 Made with ❤️ by sudo rm -rf /*  
 
-# Used technologies:
+# Используем:
 
   - ReactJS
   - Django REST Framework
