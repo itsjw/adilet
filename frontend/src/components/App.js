@@ -2,7 +2,7 @@ import React from 'react'
 import 'flexboxgrid/dist/flexboxgrid.min.css'
 import { Switch, Route } from 'react-router-dom'
 import { injectGlobal, ThemeProvider } from 'styled-components'
-import { HomePage, SearchPage } from 'components'
+import { HomePage, SearchPage, ArticlePage} from 'components'
 import theme from './themes/default'
 import Helmet from 'react-helmet'
 
@@ -34,6 +34,7 @@ const App = () => {
       <Switch>
         <Route path="/" component={HomePage} exact />
         <Route path="/search" component={SearchPage} exact />
+        <Route path="/article" component={ArticlePage} exact />
       </Switch>
     </ThemeProvider>
     </div>

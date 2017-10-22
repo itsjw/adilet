@@ -3,6 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="footer">
+    <div className="container">
       <div className="footer-l">
       <div className="footer-links col-lg-6 col-sm-6 ">
         <p>Карта сайта</p>
@@ -18,9 +19,11 @@ const Footer = () => {
         <a href="#">+651616546513</a>
       </div>
       </div>
-      <div className="copyright col-lg-12">
-        blablablablakek
-      </div>
+
+    </div>
+    <div className="copyright col-lg-12">
+      blablablablakek
+    </div>
     </div>
   )
 }

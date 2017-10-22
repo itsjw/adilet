@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 
 class Search extends React.Component {
@@ -20,8 +21,15 @@ class Search extends React.Component {
     return (
       <div>
         <div className="search-header">
-          <div className="search-logo">
-            <h1>LOGO</h1>
+          <h1>Результаты поиска по запросу "Насилие"</h1>
+        </div>
+          <div className="search-content-item">
+            <div className="search-item-header">
+             <Link to="/article"> Какие права у меня есть, если меня арестовали?</Link>
+            </div>
+            <div className="search-item-text">
+              <p>Согласно правам и свободам гражданина Кыргызской Ресупблики, у каждого арестованного человека есть права...</p>
+            </div>
           </div>
           <div className="search-input">
             <input
