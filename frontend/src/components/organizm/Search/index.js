@@ -23,22 +23,24 @@ class Search extends React.Component {
     return (
       <div>
         <div className="container">
-          <div className="header">
-            <div className="header-logo">
-              <img src="adilet.svg" alt="" />
-            </div>
-            <div className="header-links">
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Сотрудничество</a></li>
-              <li className="header-langs">
-                <a className="active" href="#">KG</a>
-                <a href="#">RU</a>
-              </li>
-            </div>
-            <button type="button">
+          <Link to="/">
+            <div className="header">
+              <div className="header-logo">
+                <img src="adilet.svg" alt="" />
+              </div>
+              <div className="header-links">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li className="header-langs">
+                  <a className="active" href="#">KG</a>
+                  <a href="#">RU</a>
+                </li>
+              </div>
+              <button type="button">
             +
-            </button>
-          </div>
+              </button>
+            </div>
+          </Link>
         </div>
 
         <div className="search-header">
