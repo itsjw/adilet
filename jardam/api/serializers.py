@@ -20,24 +20,24 @@ class EducationCategorySerializer(serializers.ModelSerializer):
 
 class EducationSerializer(serializers.ModelSerializer):
     ecategory_info = EducationCategorySerializer(read_only=True, source='ecategory')
-    ecategory = serializers.IntegerField(allow_null=True, source='ecategory_id')
+    # ecategory = serializers.IntegerField(allow_null=True, source='ecategory_id')
 
     class Meta:
         model = Education
-        fields = ('id', 'title', 'content', 'tag', 'category')
-
-
-class HelpCategorySerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = HelpCategory
-        fields = ('id', 'category_name', 'article')
+        fields = ('id', 'title', 'content', 'tag', 'ecategory_info')
 
 
 class HelpSerializer(serializers.ModelSerializer):
-    hcategory_info = HelpCategorySerializer(read_only=True, source='hcategory')
-    hcategory = serializers.IntegerField(allow_null=True, source='hcategory_id')
 
     class Meta:
         model = Article
         fields = ('id', 'title', 'description', 'tag')
+
+
+class HelpCategorySerializer(serializers.ModelSerializer):
+    hcategory_info = HelpSerializer(read_only=True, source='help')
+    # hcategory = serializers.IntegerField(allow_null=True, source='help_id')
+
+    class Meta:
+        model = HelpCategory
+        fields = ('id', 'category_name', 'article', 'hcategory_info')
