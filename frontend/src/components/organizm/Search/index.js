@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 
 class Search extends React.Component {
@@ -42,14 +43,14 @@ class Search extends React.Component {
         </div>
       </div>
 
-        <div className="container">
         <div className="search-content">
+        <div className="container">
         <div className="search-header">
           <h1>Результаты поиска по запросу "Насилие"</h1>
         </div>
           <div className="search-content-item">
             <div className="search-item-header">
-              Какие права у меня есть, если меня арестовали?
+             <Link to="/article"> Какие права у меня есть, если меня арестовали?</Link>
             </div>
             <div className="search-item-text">
               <p>Согласно правам и свободам гражданина Кыргызской Ресупблики, у каждого арестованного человека есть права...</p>
@@ -57,7 +58,7 @@ class Search extends React.Component {
           </div>
           <div className="search-content-item">
             <div className="search-item-header">
-              Где я могу получить юридическую помощь
+               <Link to="/article"> Где я могу получить юридическую помощь</Link>
             </div>
             <div className="search-item-text">
             если я испытываю насилие со стороны партнера?В первую очередь, в случае насилия постарайтесь обезопасить себя...
@@ -65,7 +66,7 @@ class Search extends React.Component {
           </div>
           <div className="search-content-item">
             <div className="search-item-header">
-            Как определить место жительства ребенка при разводе?
+             <Link to="/article"> Как определить место жительства ребенка при разводе?</Link>
             </div>
             <div className="search-item-text">
             Согласно статье 25 Семейного кодекса КР, вопросы, разрешаемые судом при вынесении решения о расторжении брака.
@@ -80,8 +81,8 @@ class Search extends React.Component {
         </div>
         </div>
 
-      <div className="container">
       <div className="footer">
+      <div className="container">
         <div className="footer-l">
         <div className="footer-links col-lg-6 col-sm-6 ">
           <p>Карта сайта</p>
@@ -97,9 +98,9 @@ class Search extends React.Component {
           <a href="#">+651616546513</a>
         </div>
         </div>
-        <div className="copyright col-lg-12">
-          blablablablakek
-        </div>
+      </div>
+      <div className="copyright col-lg-12">
+        blablablablakek
       </div>
       </div>
       </div>
