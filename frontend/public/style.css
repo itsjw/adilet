@@ -1,20 +1,25 @@
 body, html {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  color: #fff;
 }
 
 .footer {
   height: auto;
   margin: 0;
   padding-top: 40px;
-  display: flex;
-  background-color: #e8e8e8;
+  background-color: #86B7E3;
 }
 
 .copyright {
   background-color: grey;
-  width: 40px;
+  width: 100%;
   padding: 5px;
+}
+
+.footer-l {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-links, .footer-contacts, .footer-map {
@@ -22,10 +27,6 @@ body, html {
   align-items: left;
   display: grid;
   margin-bottom: 35px;
-}
-
-.footer-links {
-  margin-left: 75px
 }
 
 .footer-links a, .footer-contacts a, .footer-map a {
@@ -50,10 +51,34 @@ body, html {
   margin: auto 0;
 }
 
+.about {
+  padding-top: 50px;
+  color: #000;
+  padding-bottom: 50px;
+  background-color: #e8e8e8;
+}
+
+.about-header {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+}
+
+.about-deckription {
+  text-align: center;
+}
+
 .tags-header {
   font-size: 25px;
   text-align: center;
   padding-bottom: 30px;
+}
+
+.tags-header p {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #000;
 }
 
 li {
@@ -67,7 +92,6 @@ a {
 
 .header {
   height: 80px;
-  padding: 0 140px;
   display: flex;
   text-transform: uppercase;
   justify-content: space-between;
@@ -92,6 +116,10 @@ a {
   width: 70px;
 }
 
+.information-small-items p {
+  color: #ffc125;
+}
+
 .information-small-items {
   padding-left: 10px;
   padding-right: 10px;
@@ -103,6 +131,12 @@ a {
   height: 200px;
   width: 165px;
   text-transform: uppercase;
+}
+
+.information-small-items:hover {
+  background-color: #1b4c4d;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .information-small-items:nth-child(4) img {
@@ -130,6 +164,7 @@ a {
 .information-header {
   margin-bottom: 20px;
   text-align: center;
+  color: #000;
 }
 
 .information-header p {
@@ -207,11 +242,7 @@ a {
 
 .footer {
   height: auto;
-  background: rgb(181, 189, 200);
-  background: -moz-linear-gradient(top, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 36%, rgba(40, 52, 59, 1) 100%);
-  background: -webkit-linear-gradient(top, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 36%, rgba(40, 52, 59, 1) 100%);
-  background: linear-gradient(to bottom, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 36%, rgba(40, 52, 59, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b', GradientType=0);
+  background: #1b4c4d;
 }
 
 .search-content {
@@ -251,6 +282,11 @@ a {
   background-color: #529fa1;
 }
 
+.tags-item:hover {
+  background-color: #86B7E3;
+  cursor: pointer;
+}
+
 .home-search {
   font-family: 'Open Sans', sans-serif;
   display: table;
@@ -281,7 +317,7 @@ a {
   border-top-right-radius: 0;
   border: none;
   background-color: #e8e8e8;
-  color: black;
+  color: #000;
 }
 
 .home-search button {
@@ -299,4 +335,100 @@ a {
   background-size: 40%;
 }
 
-.home-search-text {}
+@media only screen and (max-width:1020px) {
+  .information-small-items {
+    margin: 5px;
+    width: 400px
+  }
+  .information-categories {
+    display: grid;
+  }
+}
+
+@media only screen and (max-width:810px) {
+  .header {
+    padding: 0 10px
+  }
+  .tags .row {
+    padding: 17px;
+    padding-left: 70px
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .information-small-items {
+    margin: 15px;
+    width: 300px;
+  }
+  .information-header p {
+    margin: 0;
+    padding: 30px;
+    width: 340px;
+  }
+  .footer-l {
+    display: grid;
+    justify-content: center;
+  }
+  .footer-map {
+    text-align: center;
+  }
+  .footer-links {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.header button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  height: 50px;
+  margin: auto 0;
+}
+
+@media only screen and (max-width: 650px) {
+  .home-search input {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .header-links {
+    display: none;
+  }
+  .header button {
+    display: unset;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  .home-search input {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .home-search input {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .home-search input {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .home-search input {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .information-header p {
+    margin: 0;
+    padding: 30px;
+    width: 300px;
+  }
+}

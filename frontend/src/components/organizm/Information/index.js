@@ -19,23 +19,23 @@ const Information = () => {
 
         <div className="information-item col-lg-12 col-sm-12">
           <div className="information-categories">
-            <div className="information-small-items">
+            <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="violence.svg" alt="" />
               <p>lorem kek lol</p>
             </div>
-            <div className="information-small-items">
+            <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="criminal.svg" alt="" />
               <p>lorem kek lol</p>
             </div>
-            <div className="information-small-items">
+            <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="rights.svg" alt="" />
               <p>lorem kek lol</p>
             </div>
-            <div className="information-small-items">
+            <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="family.svg" alt="" />
               <p>lorem kek lol</p>
             </div>
-            <div className="information-small-items">
+            <div className="information-small-items col-sm-12 col-md-2 col-xs-12">
               <img src="court.svg" alt="" />
               <p>lorem kek lol</p>
             </div>
