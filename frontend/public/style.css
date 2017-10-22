@@ -46,15 +46,30 @@ body, html {
   justify-content: flex-end;
 }
 
+.header-links .header-langs a {
+  color: #959595;
+  margin:0 10px;
+}
+
+.header-links .header-langs a.active {
+  color: #373737;
+}
+
 .header-links li {
   padding: 0 10px;
   margin: auto 0;
 }
 
+.header-links li a {
+  color: #207476;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .about {
   padding-top: 50px;
   color: #000;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
   background-color: #e8e8e8;
 }
 
@@ -310,7 +325,7 @@ a {
 .home-search input {
   padding: 6px;
   width: 550px;
-  height: 50px;
+  height: 51px;
   font-size: 16px;
   border-radius: 30px;
   border-bottom-right-radius: 0;
@@ -323,7 +338,6 @@ a {
 .home-search button {
   color: transparent;
   width: 70px;
-  border: none;
   border-radius: 30px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -361,9 +375,8 @@ a {
     width: 300px;
   }
   .information-header p {
-    margin: 0;
-    padding: 30px;
-    width: 340px;
+    padding: 10px;
+    width: 100%;
   }
   .footer-l {
     display: grid;
@@ -419,16 +432,34 @@ a {
   }
 }
 
+input {
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 420px) {
   .home-search input {
     width: 250px;
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
   .information-header p {
     margin: 0;
     padding: 30px;
     width: 300px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .home-search input {
+    width: 200px;
   }
 }

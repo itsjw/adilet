@@ -11,8 +11,8 @@ const {
   sourceMaps, defineConstants, webpack,
 } = require('@webpack-blocks/webpack2')
 
-const host = process.env.HOST || 'localhost'
-const port = process.env.PORT || 3000
+const host = process.env.HOST || '104.236.45.57'
+const port = process.env.PORT || 80
 const allowedHosts = [process.env.ALLOWED_HOSTS || 'localhost']
 const sourceDir = process.env.SOURCE || 'src'
 const publicPath = `/${process.env.PUBLIC_PATH || ''}/`.replace('//', '/')
