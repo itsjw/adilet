@@ -21,9 +21,6 @@ const Footer = () => {
       </div>
 
     </div>
-    <div className="copyright col-lg-12">
-      blablablablakek
-    </div>
     </div>
   )
 }
