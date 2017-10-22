@@ -2,7 +2,7 @@
 ![Адилет](https://image.prntscr.com/image/P3zELMZeT5Og0J5tklQKdQ.png)
 
 You can take a look on site here http://adilet.ml  
-Made with ❤️ by suro rm- -rf /*  
+Made with ❤️ by sudo rm -rf /*  
 
 # Used technologies:
 
