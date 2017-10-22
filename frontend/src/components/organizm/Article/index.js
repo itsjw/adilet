@@ -31,6 +31,8 @@ const Article = () => {
       <div className="article-deckription">
         <p>Поэтапная инструкция для жертв, подвергшихся семейному насилию со стороны супруга...</p>
       </div>
+      <div className="images">
+      </div>
       <hr></hr>
       <div className="instruction">
         <h2>Детализированная инструкция</h2>

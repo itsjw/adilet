@@ -343,6 +343,15 @@ a {
   padding-left: 70px
 }
 
+.images {
+  background-image: url("article.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 700px;
+  width: 400px;
+}
+
 .tags-item {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.9vh;
