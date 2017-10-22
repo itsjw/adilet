@@ -43,35 +43,35 @@ class Search extends React.Component {
 
         </div>
           </Link>
-            <div className="search-wrap">
-          <div className="home-form">
-            <input
-              type="text"
-              placeholder="Введите вашу проблему"
-              value={this.state.searchValue}
-              onChange={this.handleSearchChange}
-            />
-            <button className="submit">Search</button>
-          </div>
-          </div>
-          <div className="search-content" style={{ color: '#000' }}>
-            {
-              this.props.help.map((item) => {
-                return (
-                  <div className="search-content-item" key={item.articleId}>
-                    <div className="search-item-header">
-                      <Link to="/article"> {item.name}</Link>
-                    </div>
-                    <div className="search-item-text">
-                      <p>{item.content}</p>
-                    </div>
-                  </div>)
-              })
-            }
-          </div>
-        <div className="search-header">
-          <h1>Результаты поиска по запросу  "{this.state.searchValue}"</h1>
-        </div>
+        <div className="search-wrap">
+      <div className="home-form">
+        <input
+          type="text"
+          placeholder="Введите вашу проблему"
+          value={this.state.searchValue}
+          onChange={this.handleSearchChange}
+        />
+        <button className="submit">Search</button>
+      </div>
+      </div>
+      <div className="search-header">
+        <h1>Результаты поиска по запросу  "{this.state.searchValue}"</h1>
+      </div>
+      <div className="search-content" style={{ color: '#000' }}>
+        {
+          this.props.help.map((item) => {
+            return (
+              <div className="search-content-item" key={item.articleId}>
+                <div className="search-item-header">
+                  <Link to="/article"> {item.name}</Link>
+                </div>
+                <div className="search-item-text">
+                  <p>{item.content}</p>
+                </div>
+              </div>)
+          })
+        }
+      </div>
         <div className="search-content-item">
           <div className="search-item-header">
             <Link to="/article">Я подвергся насилию, что мне делать?</Link>
