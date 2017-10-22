@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from help.models import Article
 
-# Create your views here.
+def search(request, name_article):
+    search_list = Article.objects.all().filter(title=name_article)
+    print(search_list)
+    return render(request, 'main/result.html', {'search_list': search_list})
