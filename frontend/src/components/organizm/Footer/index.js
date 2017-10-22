@@ -2,6 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
+    <div className="container">
     <div className="footer">
       <div className="footer-l">
       <div className="footer-links col-lg-6 col-sm-6 ">
@@ -21,6 +22,7 @@ const Footer = () => {
       <div className="copyright col-lg-12">
         blablablablakek
       </div>
+    </div>
     </div>
   )
 }
