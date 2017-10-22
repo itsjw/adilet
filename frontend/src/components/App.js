@@ -16,16 +16,16 @@ injectGlobal`
 const App = () => {
   return (
     <div>
-    <Helmet titleTemplate="ARc - %s">
-       <title>Atomic React</title>
-       <meta name="description" content="React starter kit based on Atomic Design with React Router v4, Webpack, Redux, Server Side Rendering and more." />
+    <Helmet titleTemplate="%s">
+       <title>Адилет - правовой портал</title>
+       <meta name="description" content="Вы столкнулись с насилием или нарушением ваших прав и не знаете, куда обратиться? На нашем сайте вы найдете пошаговые инструкции для решения вашей проблемы" />
        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <meta property="og:site_name" content="ARc" />
-       <meta property="og:image" content="https://arc.js.org/thumbnail.png" />
+       <meta property="og:site_name" content="Адилет" />
+       <meta property="og:image" content="/adilet.svg" />
        <meta property="og:image:type" content="image/png" />
        <meta property="og:image:width" content="1200" />
        <meta property="og:image:height" content="630" />
-       <link rel="icon" href="https://arc.js.org/icon.png" />
+       <link rel="icon" href="adilet.svg" />
        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100" rel="stylesheet" />
        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
        <link href="style.css" rel="stylesheet" />
