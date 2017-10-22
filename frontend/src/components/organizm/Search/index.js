@@ -115,9 +115,7 @@ class Search extends React.Component {
           </div>
 
         </div>
-        <div className="copyright col-lg-12">
-          blablablablakek
-        </div>
+
         </div>
       </div>
     )
