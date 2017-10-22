@@ -41,3 +41,10 @@ class HelpSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         fields = ('id', 'title', 'description', 'tag')
+
+
+class ArticleSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Article
+        fields = ('id', 'title', 'description', 'tag')

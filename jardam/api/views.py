@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from clinic.models import Clinic
-from .serializers import ClinicSerializer, EducationSerializer, HelpSerializer, EducationCategorySerializer, HelpCategorySerializer
+from .serializers import ClinicSerializer, EducationSerializer, HelpSerializer, EducationCategorySerializer, HelpCategorySerializer, ArticleSerializer
 from education.models import Education, EducationCategory
 from help.models import HelpCategory, Article
 
@@ -28,3 +28,7 @@ class HelpViewSet(viewsets.ModelViewSet):
 class HelpCategoryViewSet(viewsets.ModelViewSet):
     queryset = HelpCategory.objects.all()
     serializer_class = HelpCategorySerializer
+
+class ArticleViewSet(viewsets.ModelViewSet):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
