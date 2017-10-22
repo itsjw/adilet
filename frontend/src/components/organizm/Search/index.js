@@ -54,6 +54,22 @@ class Search extends React.Component {
             <p>Согласно правам и свободам гражданина Кыргызской Ресупблики, у каждого арестованного человека есть права...</p>
           </div>
         </div>
+        <div className="search-content-item">
+          <div className="search-item-header">
+            <Link to="/article">Где я могу получить юридическую помощь</Link>
+          </div>
+          <div className="search-item-text">
+            <p>Если я испытываю насилие со стороны партнера?В первую очередь, в случае насилия постарайтесь обезопасить себя...</p>
+          </div>
+        </div>
+        <div className="search-content-item">
+          <div className="search-item-header">
+            <Link to="/article">Как определить место жительства ребенка при разводе? </Link>
+          </div>
+          <div className="search-item-text">
+            <p>Согласно статье 25 Семейного кодекса КР, вопросы, разрешаемые судом при вынесении решения о расторжении брака...</p>
+          </div>
+        </div>
         <div className="search-input">
           <input
             type="text"
@@ -63,7 +79,6 @@ class Search extends React.Component {
           />
           <button className="btn">Search</button>
         </div>
-
         <div className="search-content" style={{ color: '#000' }}>
           {
             this.props.help.map((item) => {
@@ -76,7 +91,29 @@ class Search extends React.Component {
             })
           }
         </div>
-        <div className="footer" />
+        <div className="footer">
+        <div className="container">
+          <div className="footer-l">
+          <div className="footer-links col-lg-6 col-sm-6 ">
+            <p>Карта сайта</p>
+            <a href="#">О нас</a>
+            <a href="#">Сотрудничесиво</a>
+            <a href="#">Обучение</a>
+          </div>
+          <div className="footer-map col-lg-6 col-sm-6 ">
+            <p>Контакты</p>
+            <a href="#">+416516134564</a>
+            <a href="#">+546165191616</a>
+            <a href="#">+616516546516</a>
+            <a href="#">+651616546513</a>
+          </div>
+          </div>
+
+        </div>
+        <div className="copyright col-lg-12">
+          blablablablakek
+        </div>
+        </div>
       </div>
     )
   }

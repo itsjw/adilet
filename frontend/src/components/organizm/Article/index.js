@@ -29,45 +29,62 @@ const Article = () => {
         <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
       </div>
       <div className="article-deckription">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus incidunt labore nemo officiis accusantium earum, neque adipisci facilis. Beatae animi, blanditiis rem perspiciatis! Repellendus perspiciatis, ipsa maxime non reprehenderit optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur modi, mollitia voluptatum harum incidunt ducimus in atque distinctio aliquid, impedit vero culpa nam! Quidem autem aliquam, dolorum inventore officia iste.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam distinctio voluptatum voluptates? Ratione culpa, praesentium incidunt maxime. Ipsum ipsam accusamus, facere minus sapiente fugit, eligendi neque itaque officia pariatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi voluptates aliquam delectus aperiam reprehenderit accusantium voluptate, saepe dignissimos. Unde labore a quod, alias tenetur necessitatibus vitae fugit nam, quos.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus incidunt labore nemo officiis accusantium earum, neque adipisci facilis. Beatae animi, blanditiis rem perspiciatis! Repellendus perspiciatis, ipsa maxime non reprehenderit</p><p> optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur modi, mollitia voluptatum harum incidunt ducimus in atque distinctio aliquid, impedit vero culpa nam! Quidem autem aliquam, dolorum inventore officia iste.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam distinctio voluptatum voluptates? Ratione culpa, praesentium incidunt maxime. Ipsum ipsam accusamus, </p><p>facere minus sapiente fugit, eligendi neque itaque officia pariatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi voluptates aliquam delectus aperiam reprehenderit accusantium voluptate, saepe dignissimos. Unde labore a quod, alias tenetur necessitatibus vitae fugit nam, quos.</p>
+      </div>
+      <hr></hr>
+      <div className="instruction">
+        <h2>Детализированная инструкция</h2>
       </div>
       <div className="article-links">
         <div className="article-item">
           <div className="article-item-header">
-          lorem
+          Шаг 1.
           </div>
           <div className="article-item-description">
-          <a href="">Lorem</a>
+          <a href="">Получение консультации</a>
           </div>
         </div>
         <div className="article-item">
           <div className="article-item-header">
-          lorem
+          Шаг 2.
           </div>
           <div className="article-item-description">
-          <a href="">Lorem</a>
+          <a href="">Попросить в милиции направление на медицинский осмотр.</a>
           </div>
         </div>
         <div className="article-item">
           <div className="article-item-header">
-          lorem
+          Шаг 3.
           </div>
           <div className="article-item-description">
-          <a href="">Lorem</a>
+          <a href="">Пройти медицинский осмотр и получить карточку с информацией о зафиксированных побоях.
+            </a>
           </div>
         </div>
         <div className="article-item">
           <div className="article-item-header">
-          lorem
+          Шаг 4.
           </div>
           <div className="article-item-description">
-          <a href="">Lorem</a>
+          <a href="">Собрать другие доказательства, помимо медицинского заключения о побоях. В качестве доказательств вы можете предоставить:
+            <p>·  	Записки с камер наблюдения;</p>
+            <p>·  	Показания свидетелей.</p>
+            </a>
+          </div>
+        </div>
+        <div className="article-item">
+          <div className="article-item-header">
+          Шаг 5.
+          </div>
+          <div className="article-item-description">
+          <a href="">Предоставить районному суду доказательства вины мужа и ожидать вызова в суд.</a>
           </div>
         </div>
       </div>
       </div>
     </div>
 
+    <div className="footer">
     <div className="container">
       <div className="footer-l">
       <div className="footer-links col-lg-6 col-sm-6 ">
@@ -90,9 +107,9 @@ const Article = () => {
       blablablablakek
     </div>
     </div>
+    </div>
   )
 }
 
-Article.propTypes = {}
 
 export default Article
