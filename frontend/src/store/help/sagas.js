@@ -3,10 +3,13 @@ import axios from 'axios'
 import { receiveHelp, receiveHelpArticle } from './actions'
 
 export function* fetchHelpSaga(value) {
-  const apiResponse = yield call(axios.get, 'http://localhost:3001/help?q='+value)
-  
+  if (value === '') {
+    yield put(receiveHelp([]))
+  } else {
+    const apiResponse = yield call(axios.get, `http://localhost:3001/help?q=${value}`)
 
-  yield put(receiveHelp(apiResponse.data))
+    yield put(receiveHelp(apiResponse.data))
+  }
 }
 
 export function* fetchHelpArticleSaga(articleId) {

@@ -84,6 +84,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.20.0",
+    "debounce": "^1.0.2",
     "dotenv-webpack": "^1.5.4",
     "flexboxgrid": "^6.3.1",
     "history": "^4.6.1",

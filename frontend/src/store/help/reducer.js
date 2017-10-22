@@ -1,10 +1,9 @@
 const help = (state = [], action) => {
-    switch (action.type) {
-        case "RECEIVE_HELP":
-            return state.concat(action.payload.help)
-        
-        default:
-            return state
-    }
+  switch (action.type) {
+    case 'RECEIVE_HELP':
+      return action.payload
+    default:
+      return state
+  }
 }
 export default help
