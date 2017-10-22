@@ -21,7 +21,7 @@ class HomePage extends React.Component {
             </div>
             <div className="home-form">
               <form method="post" action="">
-                <input type="text" name="search-str" id="search-str" onChange={e => this.setState({ searchValue: e.target.value })} />
+                <input type="text" name="search-str" id="search-str" placeholder="Введите вашу проблему" onChange={e => this.setState({ searchValue: e.target.value })} />
                 <Link to={{ pathname: '/search', state: this.state.searchValue }}><button type="submit">fsdf</button></Link>
               </form>
             </div>

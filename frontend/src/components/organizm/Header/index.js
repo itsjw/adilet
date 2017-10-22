@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="container">
     <div className="header">
+    <div className="container">
       <div className="header-logo">
         <img src="adilet.svg" alt="" />
       </div>
@@ -12,7 +12,7 @@ const Header = () => {
         <li><a href="#">Сотрудничество</a></li>
         <li className="header-langs">
           <a className="active" href="#">KG</a>
-          <a href="#">RU</a>    
+          <a href="#">RU</a>
         </li>
       </div>
       <button type="button">
