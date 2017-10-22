@@ -31,8 +31,6 @@ const Article = () => {
       <div className="article-deckription">
         <p>Поэтапная инструкция для жертв, подвергшихся семейному насилию со стороны супруга...</p>
       </div>
-      <div className="images">
-      </div>
       <hr></hr>
       <div className="instruction">
         <h2>Детализированная инструкция</h2>
@@ -82,6 +80,8 @@ const Article = () => {
           <a href="">Предоставить районному суду доказательства вины мужа и ожидать вызова в суд.</a>
           </div>
         </div>
+      </div>
+      <div className="images">
       </div>
       </div>
     </div>

@@ -350,6 +350,7 @@ a {
   background-position: center center;
   height: 700px;
   width: 400px;
+  margin: 0 auto;
 }
 
 .tags-item {
