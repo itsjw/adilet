@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {% if search_list %}
+        {% for article in search_list %}
+            <h1>{{ article.description }}</h1>
+        {% endfor %}
+    {% else %}
+        <p class="alert-link"><h2 class="termin-is-not text-center">Нет такого термина в базе данных</h2></p>
+    {% endif %}
+</body>
+</html>
