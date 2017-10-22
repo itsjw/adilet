@@ -11,40 +11,15 @@ class Search extends React.Component {
     }
   }
 
-  componentDidUpdate = () => {
-    this.props.getSearchResult(this.state.searchValue)
-  }
-
   handleSearchChange = (e) => {
     this.setState({ searchValue: e.target.value })
+    this.props.getSearchResult(e.target.value)
   }
 
   render() {
-    console.log(this.props)
+    console.log(this.props.help)
     return (
       <div>
-
-      <div className="container">
-      <div className="header">
-        <div className="header-logo">
-          <img src="adilet.svg" alt="" />
-        </div>
-        <div className="header-links">
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Сотрудничество</a></li>
-          <li className="header-langs">
-            <a className="active" href="#">KG</a>
-            <a href="#">RU</a>
-          </li>
-        </div>
-        <button type="button">
-          +
-        </button>
-        </div>
-      </div>
-
-        <div className="search-content">
-        <div className="container">
         <div className="search-header">
           <h1>Результаты поиска по запросу "Насилие"</h1>
         </div>
@@ -56,53 +31,29 @@ class Search extends React.Component {
               <p>Согласно правам и свободам гражданина Кыргызской Ресупблики, у каждого арестованного человека есть права...</p>
             </div>
           </div>
-          <div className="search-content-item">
-            <div className="search-item-header">
-               <Link to="/article"> Где я могу получить юридическую помощь</Link>
-            </div>
-            <div className="search-item-text">
-            если я испытываю насилие со стороны партнера?В первую очередь, в случае насилия постарайтесь обезопасить себя...
-            </div>
-          </div>
-          <div className="search-content-item">
-            <div className="search-item-header">
-             <Link to="/article"> Как определить место жительства ребенка при разводе?</Link>
-            </div>
-            <div className="search-item-text">
-            Согласно статье 25 Семейного кодекса КР, вопросы, разрешаемые судом при вынесении решения о расторжении брака.
-            </div>
-          </div>
-          <div className="search-content-item">
-            <div className="search-item-header">
-            </div>
-            <div className="search-item-text">
-            </div>
+          <div className="search-input">
+            <input
+              type="text"
+              placeholder="searching area"
+              value={this.state.searchValue}
+              onChange={this.handleSearchChange}
+            />
+            <button className="btn">Search</button>
           </div>
         </div>
+        <div className="search-content" style={{ color: '#000' }}>
+          {
+            this.props.help.map((item) => {
+              return (
+                <div className="search-content-item" key={item.articleId}>
+                  <h3>{item.name}</h3>
+                  <p>{item.category}</p>
+                  <p>{item.content}</p>
+                </div>)
+            })
+          }
         </div>
-
-      <div className="footer">
-      <div className="container">
-        <div className="footer-l">
-        <div className="footer-links col-lg-6 col-sm-6 ">
-          <p>Карта сайта</p>
-          <a href="#">О нас</a>
-          <a href="#">Сотрудничесиво</a>
-          <a href="#">Обучение</a>
-        </div>
-        <div className="footer-map col-lg-6 col-sm-6 ">
-          <p>Контакты</p>
-          <a href="#">+416516134564</a>
-          <a href="#">+546165191616</a>
-          <a href="#">+616516546516</a>
-          <a href="#">+651616546513</a>
-        </div>
-        </div>
-      </div>
-      <div className="copyright col-lg-12">
-        blablablablakek
-      </div>
-      </div>
+        <div className="footer" />
       </div>
     )
   }
@@ -110,6 +61,7 @@ class Search extends React.Component {
 
 Search.propTypes = {
   getSearchResult: PropTypes.func,
+  help: PropTypes.array,
 }
 
 export default Search

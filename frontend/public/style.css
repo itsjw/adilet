@@ -309,6 +309,15 @@ a {
   cursor: pointer;
 }
 
+.home-form a {
+  overflow: hidden;
+  display:inline-block;
+}
+
+.home-form form {
+  display: flex !important;
+}
+
 .home-search {
   font-family: 'Open Sans', sans-serif;
   display: table;
@@ -329,6 +338,9 @@ a {
   height: calc(100vh-80px);
   background-size: cover;
   color: #fff;
+  height: calc(100vh - 80px);
+  display:flex;
+  align-items:center;
 }
 
 .home-search input {
@@ -350,7 +362,8 @@ a {
   border-radius: 30px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
-  height: 63px;
+  height: 64px;
+  border:0;
   background-color: #207476;
   background-image: url('search.svg');
   background-repeat: no-repeat;

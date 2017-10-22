@@ -13,3 +13,4 @@ frontend/.happypack/
 .vscode/
 frontend/.happypack/*
 env/
+frontend/dist/
