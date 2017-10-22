@@ -12,8 +12,9 @@
 			stroke-miterlimit: 10;
 		}
 		.st2 {
-			fill: #ffc125;
+			fill: #207476;
 		}
+
 	</style>
 	<g class="st0">
 		<rect x="-495.7" y="-262.5" class="st1" width="1220.1" height="751.6"/>

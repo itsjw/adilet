@@ -1,5 +1,5 @@
 body, html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   color: #fff;
 }
@@ -68,7 +68,7 @@ body, html {
 }
 
 .header-links .header-langs a {
-  color: #959595;
+  color: #fff;
   margin: 0 10px;
 }
 
@@ -82,9 +82,15 @@ body, html {
 }
 
 .header-links li a {
-  color: #207476;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
+}
+
+.center {
+  display: table;
+  margin: 50px;
+  margin-left: 0px;
 }
 
 .about {
@@ -98,6 +104,7 @@ body, html {
   text-transform: uppercase;
   text-align: center;
   font-size: 50px;
+  color: #207476;
 }
 
 .about-deckription {
@@ -131,7 +138,15 @@ a {
   display: flex;
   text-transform: uppercase;
   justify-content: space-between;
-  background-image: #fff;
+  background-color: #207476;
+}
+
+.header .container {
+  height: 80px;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  background-color: #207476;
 }
 
 .header-text {
@@ -153,7 +168,9 @@ a {
 }
 
 .information-small-items p {
-  color: #ffc125;
+  color: #207476;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .information-small-items {
@@ -163,7 +180,7 @@ a {
   margin: 10px;
   margin-bottom: 40px;
   border-radius: 15px;
-  border: 1px solid #ffc125;
+  border: 1px solid #207476;
   height: 200px;
   width: 165px;
   text-transform: uppercase;
@@ -210,6 +227,7 @@ a {
 .information-header h1 {
   font-size: 50px;
   margin: 0;
+  color: #207476;
   font-weight: light;
   font-family: 'Roboto Slab', serif;
 }
@@ -311,7 +329,7 @@ a {
 
 .home-form a {
   overflow: hidden;
-  display:inline-block;
+  display: inline-block;
 }
 
 .home-form form {
@@ -335,12 +353,11 @@ a {
   background-image: url(banner.jpg);
   background-position: center center;
   width: 100%;
-  height: calc(100vh-80px);
   background-size: cover;
   color: #fff;
   height: calc(100vh - 80px);
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
 }
 
 .home-search input {
@@ -349,6 +366,7 @@ a {
   height: 51px;
   font-size: 16px;
   border-radius: 30px;
+  padding-left: 50px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   border: none;
@@ -363,12 +381,66 @@ a {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   height: 64px;
-  border:0;
+  border: 0;
   background-color: #207476;
   background-image: url('search.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 40%;
+}
+
+.article {
+  color: black;
+}
+
+.instruction {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.article-item-header {
+  letter-spacing: 0;
+  color: grey;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+hr {
+  margin-bottom: 40px;
+}
+
+.article-item-description a {
+  letter-spacing: -0.6px;
+  font-weight: bolder;
+  color: grey;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.article-item-description a {
+  border-bottom: 1px dotted black;
+  margin-bottom: 30px;
+}
+
+.article-item-description {
+  margin-bottom: 30px;
+}
+
+.article-item-description p {
+  letter-spacing: 0;
+  color: grey;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.article-header {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.article-deckription {
+  width: 60%;
+  font-size: 13px;
 }
 
 @media only screen and (max-width:1020px) {
@@ -389,6 +461,10 @@ a {
   .header {
     padding: 0 10px
   }
+  .container, .container-fluid {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
   .tags .row {
     padding: 17px;
     padding-left: 70px
@@ -396,6 +472,16 @@ a {
   .search-content-item {
     color: black;
     padding: 20px 100px;
+  }
+  .home-search-wrapp {
+    background-image: url(banner.jpg);
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    height: calc(50vh);
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -445,6 +531,16 @@ a {
   }
   .header button {
     display: unset;
+  }
+  .home-search-wrapp {
+    background-image: url(banner.jpg);
+    background-position: center center;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+    height: calc(50vh);
+    display: flex;
+    align-items: center;
   }
 }
 
