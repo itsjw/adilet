@@ -320,6 +320,9 @@ a {
   background-position: center center;
   background-size: cover;
   color: #fff;
+  height: calc(100vh - 80px);
+  display:flex;
+  align-items:center;
 }
 
 .home-search input {
