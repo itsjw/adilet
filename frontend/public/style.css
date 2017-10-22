@@ -46,9 +46,24 @@ body, html {
   justify-content: flex-end;
 }
 
+.header-links .header-langs a {
+  color: #959595;
+  margin:0 10px;
+}
+
+.header-links .header-langs a.active {
+  color: #373737;
+}
+
 .header-links li {
   padding: 0 10px;
   margin: auto 0;
+}
+
+.header-links li a {
+  color: #207476;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .about {
