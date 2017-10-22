@@ -26,10 +26,10 @@ const Article = () => {
     <div className="article">
     <div className="container">
       <div className="article-header">
-        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+        <h1>Я подвергся насилию, что мне делать?</h1>
       </div>
       <div className="article-deckription">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus incidunt labore nemo officiis accusantium earum, neque adipisci facilis. Beatae animi, blanditiis rem perspiciatis! Repellendus perspiciatis, ipsa maxime non reprehenderit</p><p> optio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur modi, mollitia voluptatum harum incidunt ducimus in atque distinctio aliquid, impedit vero culpa nam! Quidem autem aliquam, dolorum inventore officia iste.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam distinctio voluptatum voluptates? Ratione culpa, praesentium incidunt maxime. Ipsum ipsam accusamus, </p><p>facere minus sapiente fugit, eligendi neque itaque officia pariatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eligendi voluptates aliquam delectus aperiam reprehenderit accusantium voluptate, saepe dignissimos. Unde labore a quod, alias tenetur necessitatibus vitae fugit nam, quos.</p>
+        <p>Поэтапная инструкция для жертв, подвергшихся семейному насилию со стороны супруга...</p>
       </div>
       <hr></hr>
       <div className="instruction">

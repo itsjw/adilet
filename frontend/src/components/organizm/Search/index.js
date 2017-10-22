@@ -49,10 +49,10 @@ class Search extends React.Component {
         </div>
         <div className="search-content-item">
           <div className="search-item-header">
-            <Link to="/article"> Какие права у меня есть, если меня арестовали?</Link>
+            <Link to="/article">Я подвергся насилию, что мне делать?</Link>
           </div>
           <div className="search-item-text">
-            <p>Согласно правам и свободам гражданина Кыргызской Ресупблики, у каждого арестованного человека есть права...</p>
+            <p>Поэтапная инструкция для жертв, подвергшихся семейному насилию со стороны супруга...</p>
           </div>
         </div>
         <div className="search-content-item">
